@@ -41,6 +41,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 42px;
 }
 .header-logo img {
@@ -92,7 +93,6 @@ a {
     text-align: center;
     padding-top: 170px;
     padding-bottom: 74px;
-    margin-bottom: 120px;
 }
 h1 {
     font-family: 'Playfair Display', serif;
@@ -136,22 +136,104 @@ header-section-row span {
     width: 21px;
     height: 21px;
 }
-.desc-items {
+.features {
+    margin: 120px 0;
+}
+.features-items {
     display: flex;
     justify-content: center;
     gap: 25px;
 }
-.desc-list {
+.feature {
     text-align: center;
 }
-.desc-list img {
+.feature img {
     margin-bottom: 53px;
 }
-.desc-list p {
+.feature p {
     max-width: 193px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 20px;
     line-height: 27px;
     margin: 0 auto;
+}
+.catalog-header {
+    margin-bottom: 100px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #D4C17F;
+    margin: 0;
+}
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.catalog-item {
+    position: relative;
+    overflow: hidden;
+}
+.catalog-item p {
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    bottom: 50px;
+    padding-left: 50px;
+}
+.catalog-item img {
+    transition: transform 0.25s;
+}
+.catalog-item img:hover {
+    transform: scale(1.1);
+}
+.bg-form {
+    background-image: url(../images/input-bg.jpg);
+    padding-top: 180px;
+    padding-bottom: 180px;
+}
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.description h2 {
+    margin-bottom: 43px;
+}
+.description p {
+    max-width: 535px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+.form-items {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 30px;
+    align-content: end;
+}
+.form-items input {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 17px 48px;
+    border: none;
+}
+.form-items p {
+    color: #E7E7E7;
+    font-size: 13px;
+    max-width: 255px;
+    margin: 0;
+    line-height: 16px;
+}
+.form-items button {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #D4C17F;
+    border: none;
+    padding: 17px 48px;
 }
