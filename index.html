@@ -17,14 +17,14 @@
         <header>
             <div class="container">
                 <div class="header">
-                    <a class="header-logo" href="#"><img src="images/logo-header.svg" alt="logo"></a>
+                    <a class="logo" href="#"><img src="images/logo-header.svg" alt="logo"></a>
                     <nav>
                         <ul class="header-nav">
                             <li><a href="#" class="hover-line">О комплексе</a></li>
-                            <li><a href="#" class="hover-line">Район</a></li>
-                            <li><a href="#" class="hover-line">Каталог квартир</a></li>
+                            <li><a href="#district" class="hover-line">Район</a></li>
+                            <li><a href="#flats" class="hover-line">Каталог квартир</a></li>
                             <li><a href="#" class="hover-line">Ипотека</a></li>
-                            <li><a href="#" class="hover-line">Контакты</a></li>
+                            <li><a href="#contacts-footer" class="hover-line">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -96,14 +96,97 @@
                         <p>Lorem Ipsum - это текст-"рыба", часто используемый в&nbsp;печати и&nbsp;вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для&nbsp;текстов на&nbsp;латинице с&nbsp;начала XVI&nbsp;века. В&nbsp;то&nbsp;время некий безымянный печатник создал большую коллекцию размеров и&nbsp;форм шрифтов, используя Lorem&nbsp;Ipsum для&nbsp;распечатки образцов. </p>
                     </div>
                     <form class="form-items">
-                        <input type="text" name="name" placeholder="Ваше имя">
-                        <input type="text" name="phone" placeholder="Ваш телефон">
-                        <p>*Мы никому не&nbsp;передаем ваши&nbsp;данные, и&nbsp;не&nbsp;сохраняем ваш номер в&nbsp;базу.</p>
-                        <button type="submit">Посмотреть район</button>
+                        <input class="input" type="text" name="name" placeholder="Ваше имя">
+                        <input class="input" type="text" name="phone" placeholder="Ваш телефон">
+                        <p class="input-desc">*Мы никому не&nbsp;передаем ваши&nbsp;данные, и&nbsp;не&nbsp;сохраняем ваш номер в&nbsp;базу.</p>
+                        <button class="button" type="submit">Посмотреть район</button>
                     </form>
                 </div>
             </div>
         </div>
+        <div class="video">
+            <div class="container">
+                <video width="719px" height="650px" controls muted poster="images/video-poster.jpg">
+                    <source src="video/city-video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <section class="map" id="district">
+            <div class="container">
+                <h2>Район на карте</h2>
+                <div class="map-wrapper">
+                    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8985.588903598642!2d37.63172320789346!3d55.734226888591365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afd549e3fe9%3A0x576cd983939d5113!2z0J_Rj9GC0ZHRgNC-0YfQutCw!5e0!3m2!1sru!2sru!4v1638942559173!5m2!1sru!2sru" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="input-questions">
+            <div class="container">
+                <h2>Есть вопросы?</h2>
+                <form class="input-form">
+                    <p class="input-desc">*Мы никому не&nbsp;передаем ваши&nbsp;данные, и&nbsp;не&nbsp;сохраняем ваш номер в&nbsp;базу.</p>
+                    <input class="input" type="text" name="name" placeholder="Ваше имя">
+                    <input class="input" type="text" name="phone" placeholder="Ваш телефон">
+                    <button class="button" type="submit">Посмотреть район</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer id="contacts-footer">
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-logo">
+                    <a class="logo" href="#"><img src="images/logo-header.svg" alt="logo"></a>
+                </div>
+                <div class="footer-menu">
+                    <ul class="footer-menu">
+                        <li><a href="#">О комплексе</a></li>
+                        <li><a href="#">Район</a></li>
+                        <li><a href="#">Каталог квартир</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul class="footer-menu">
+                        <li><a href="#">О комплексе</a></li>
+                        <li><a href="#">Район</a></li>
+                        <li><a href="#">Каталог квартир</a></li>
+                        <li><a href="#">Ипотека</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <ul>
+                        <li><span>Адрес: Наб. реки Фонтанки 10-15</span></li>
+                        <li><span>Телефон: <a href="tel: 8 (812) 123-45-67">8 (812) 123-45-67</a></span></li>
+                        <li><span>Отдел продаж: 10:00 - 20:00</span></li>
+                        <li><span>E-mail:<a id="email-color" href="mailto: vip@housevip.ru"> vip@housevip.ru</a></span></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/social_icons/youtube.png" alt="yt"></a>
+                        <a href="#"><img src="images/social_icons/vk.png" alt="vk"></a>
+                        <a href="#"><img src="images/social_icons/fb.png" alt="fb"></a>
+                        <a href="#"><img src="images/social_icons/inst.png" alt="inst"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const links = document.querySelectorAll("a");
+
+        for (const link of links) {
+        link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
 </body>
 </html>
