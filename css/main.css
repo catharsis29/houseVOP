@@ -228,6 +228,9 @@ h2 {
 .video {
     margin-bottom: 180px;
 }
+video {
+    width: 70%;
+}
 .map h2 {
 margin-bottom: 100px;
 }
@@ -318,7 +321,7 @@ margin-right: 21px;
         display: none;
     }
     .features-items {
-        overflow-x: auto;
+        flex-wrap: wrap;
     }
     .catalog-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -360,5 +363,8 @@ margin-right: 21px;
     }
     .video {
         margin-bottom: 90px;
+    }
+    video {
+        width: 100%;
     }
 }
