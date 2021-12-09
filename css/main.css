@@ -323,13 +323,11 @@ margin-right: 21px;
     }
     .form-items {
         grid-template-columns: repeat(1, 1fr);
-        max-width: 200px;
-        margin: 0 auto;
+
     }
     .input-form {
         grid-template-columns: repeat(1, 1fr);
-        max-width: 200px;
-        margin: 0 auto;
+        justify-content: center;
     }
     .input-form .input-desc {
         grid-column: 1;
@@ -346,5 +344,16 @@ margin-right: 21px;
     }
     .social-icons {
         margin: 0 auto;
+    }
+    .header-section-row {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 400px) {
+    .container {
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 36px;
     }
 }
