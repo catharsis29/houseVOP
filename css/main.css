@@ -283,3 +283,28 @@ margin-right: 21px;
 }
 .social-icons img:hover {
     transform: scale(1.2);
+}
+@media (max-width: 1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .content-flex {
+        flex-direction:column;
+        gap: 30px;
+    }
+    .description p {
+        max-width: 738px;
+    }
+    .input-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 20px;
+    }
+    .input-form .input-desc {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .footer-flex {
+        gap: 40px;
+    }
+}
