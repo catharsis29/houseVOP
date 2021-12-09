@@ -221,9 +221,11 @@ h2 {
 .button:hover {
     color: black;
 }
-.video {
+.video-flex {
     display: flex;
     justify-content: center;
+}
+.video {
     margin-bottom: 180px;
 }
 .map h2 {
