@@ -295,7 +295,7 @@ margin-right: 21px;
     }
     .content-flex {
         flex-direction:column;
-        gap: 30px;
+        gap: 40px;
     }
     .description p {
         max-width: 738px;
@@ -322,6 +322,7 @@ margin-right: 21px;
     }
     .features-items {
         flex-wrap: wrap;
+        gap: 40px;
     }
     .catalog-grid {
         grid-template-columns: repeat(1, 1fr);
