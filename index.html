@@ -27,6 +27,9 @@
                             <li><a href="#contacts-footer" class="hover-line">Контакты</a></li>
                         </ul>
                     </nav>
+                    <div class="burger-menu-logo">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -174,7 +177,24 @@
             </div>
         </div>
     </footer>
+    <div id="modal" class="modal">
+        <ul class="header-nav">
+                <li><a href="#" class="hover-line">О комплексе</a></li>
+                <li><a href="#district" class="hover-line">Район</a></li>
+                <li><a href="#flats" class="hover-line">Каталог квартир</a></li>
+                <li><a href="#" class="hover-line">Ипотека</a></li>
+                <li><a href="#contacts-footer" class="hover-line">Контакты</a></li>
+            </ul>
+        <button class="burger-close" onclick="closeModal()"></button>
+    </div>
     <script>
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+        function closeModal() {
+            document.getElementById("modal").style.top = "-700px";
+        }
+
         const links = document.querySelectorAll("a");
 
         for (const link of links) {
